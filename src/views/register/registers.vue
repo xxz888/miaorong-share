@@ -20,7 +20,7 @@
             <div class="title">手机号</div>
             <div class="input">
               <div class="left">
-                <img  src="../../assets/register/phone_icon.png" alt="" />
+                <img  src="../../assets/register/phone.jpg" alt="" />
               </div>
               <div class="right">
                 <van-field
@@ -39,7 +39,7 @@
             <div class="title">密码</div>
             <div class="input">
               <div class="left">
-                <img  src="../../assets/register/v_pwd.png" alt="" />
+                <img  src="../../assets/register/pwd.jpg" alt="" />
               </div>
               <div class="right">
                 <van-field
@@ -60,7 +60,7 @@
             <div class="title">验证码</div>
             <div class="input">
               <div class="left">
-                <img  src="../../assets/register/v_code_icon.png" alt="" />
+                <img  src="../../assets/register/code.jpg" alt="" />
               </div>
               <div class="right">
                 <van-field
@@ -288,7 +288,7 @@ export default {
               res.result.downloadAndroidUrl != ""
             ) {
                 this.$toast({ message: "注册成功", position: "bottom" });
-              // window.location.href = res.result.downloadAndroidUrl;
+              window.location.href = res.result.downloadAndroidUrl;
             } else {
               this.$toast({ message: "当前无下载链接", position: "bottom" });
             }
@@ -297,7 +297,7 @@ export default {
             if (res.result.iOS.url != null && res.result.iOS.url != "") {
                               this.$toast({ message: "注册成功", position: "bottom" });
 
-              // window.location.href = res.result.iOS.url;
+              window.location.href = res.result.iOS.url;
             } else {
               this.$toast({ message: "当前无下载链接", position: "bottom" });
             }
@@ -378,12 +378,12 @@ export default {
   padding: 0 35px;
 }
 .item .title {
-  color: #3AC461;
+  color: #30AEFB;
   text-align: left;
   padding-top: 10px;
 }
 .input {
-  border-bottom: 2px solid #3AC461; 
+  border-bottom: 2px solid #30AEFB; 
   display: flex;
   
 }
@@ -392,14 +392,13 @@ export default {
 }
 .input .left img {
   height: 24px;
-  width: 18px;
   margin-top: 8px;
 }
 .btn {
   width: 180px;
   height: 35px;
   /* background-image:linear-gradient(rgb(236,138,101), rgb(225, 84, 49));; */
-  background-color:  #3AC461;
+  background-color:  #30AEFB;
   /* border-radius: 29px; */
   border-radius: 12px;
   font-size: 14px;
@@ -414,14 +413,15 @@ export default {
   font-size: 14px;
   width: 100%;
     text-align: center;
-  color:  #3AC461;
+  color:  #30AEFB;
   margin-top: 10px ;
 }
 .sms {
-  background-color:  #3AC461;
+  background-color:  #30AEFB;
   color: #fff;
   font-size: 13px;
   padding: 0px 2px;
+  border-radius: 2px;
 }
 /* .ra{
     border-radius: 30px;

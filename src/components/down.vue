@@ -2,7 +2,6 @@
 <div>
      <div class="cen">
             <div class="version">
-                <img src="../assets/26c50ccd5e571896f1d0f76d707c8f0.jpg" />
                 <p class="zi">当前版本 : {{ve}} {{version}}</p>
             </div>
 
