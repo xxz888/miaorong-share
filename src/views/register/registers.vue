@@ -277,6 +277,7 @@ export default {
     // },
     _getDownload() {
       getDownload(this.brandId).then((res) => {
+        debugger
         if (res.resp_code == "000000") {                        
           var u = navigator.userAgent,
             app = navigator.appVersion;
